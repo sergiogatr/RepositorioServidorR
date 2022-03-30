@@ -40,46 +40,49 @@ public class Controller extends HttpServlet {
         if (request.getPathInfo().equals("/")) {
             System.out.println("Primera Puerta");
       
-//            if (request.getParameter("svc") != null) {
-//                UtilesServicios.procesar(config, request, response);
-//            } else if (request.getParameter("cmd") != null) {
-//                UtilesComandos.procesar(config, request, response);
-//            }
-
-            
-            
-                // Request > Comando
-                String cmd = request.getParameter("cmd");
-            
-                // Salida
-                String out;
-            
-                // Discriminar Comando
-                if (cmd == null) {
-//                  out = "?cmd=langing";
-                    out = "WEB-INF/views/visita/visita-landing.jsp";
+            if (request.getParameter("svc") != null) {
+                UtilesServicios.procesar(config, request, response);
+            } else if (request.getParameter("cmd") != null) {
+                UtilesComandos.procesar(config, request, response);
+            } else {
                 
-                } else if (cmd.equals("login")) {
-//                  out = "?cmd=login";
-                    out = "WEB-INF/views/usuario/usuario-login.jsp";
+                // Página Predeterminada
                 
-                } else if (cmd.equals("logout")) {
-//                  out = "?cmd=logout";
-                    out = "WEB-INF/views/usuario/usuario-logout.jsp";
                 
-                } else if (cmd.equals("main")) {
-//                  out = "?cmd=main";
-                    out = "WEB-INF/views/main/main-usuario.jsp";
-                
-                } else {
-                    out = "WEB-INF/views/message/recurso-inaccesible.jsp";
-                }
+            }
             
-                // Redirección
-                RequestDispatcher despachador = request.getRequestDispatcher(out);
-            
-                // Lanzar Vista
-                despachador.forward(request, response);
+//                // Request > Comando
+//                String cmd = request.getParameter("cmd");
+//            
+//                // Salida
+//                String out;
+//            
+//                // Discriminar Comando
+//                if (cmd == null) {
+////                  out = "?cmd=langing";
+//                    out = "WEB-INF/views/visita/visita-landing.jsp";
+//                
+//                } else if (cmd.equals("login")) {
+////                  out = "?cmd=login";
+//                    out = "WEB-INF/views/usuario/usuario-login.jsp";
+//                
+//                } else if (cmd.equals("logout")) {
+////                  out = "?cmd=logout";
+//                    out = "WEB-INF/views/usuario/usuario-logout.jsp";
+//                
+//                } else if (cmd.equals("main")) {
+////                  out = "?cmd=main";
+//                    out = "WEB-INF/views/main/main-usuario.jsp";
+//                
+//                } else {
+//                    out = "WEB-INF/views/message/recurso-inaccesible.jsp";
+//                }
+//            
+//                // Redirección
+//                RequestDispatcher despachador = request.getRequestDispatcher(out);
+//            
+//                // Lanzar Vista
+//                despachador.forward(request, response);
             
         } else {
             System.out.println("Segunda Puerta");
