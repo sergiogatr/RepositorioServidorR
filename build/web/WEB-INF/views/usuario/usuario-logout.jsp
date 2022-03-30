@@ -17,7 +17,7 @@
         <div id="container">
             <h1>Logout Realizado</h1>
             <h2>¡Nos vemos!</h2>
-            <button>Volver</button>
+            <a href="#">Volver</a>
             <img src="public/img/despedida.jpg" alt="alt"/>
         </div>
     </body>

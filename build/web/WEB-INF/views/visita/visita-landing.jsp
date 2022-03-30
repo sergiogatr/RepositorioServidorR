@@ -17,7 +17,7 @@
         <div id="container">
             <h1>Estás en Visita</h1>
             <img src="public/img/imagen1.jpg" alt="alt"/>
-            <button>Acceder</button>
+            <a href="#">Acceder</a>
         </div>
     </body>
 </html>

@@ -17,7 +17,7 @@
         <div id="container">
             <h1>Recurso Inaccesible</h1>
             <h2>...Vaya...</h2>
-            <button>Volver</button>
+            <a href="#">Volver</a>
             <img src="public/img/pulgarb.jpg" alt="alt"/>
         </div>
     </body>

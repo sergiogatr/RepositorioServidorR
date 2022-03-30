@@ -17,7 +17,7 @@
         <div id="container">
             <h1>Bienvenido al Main</h1>
             <img src="public/img/imagen1.jpg" alt="alt"/>
-            <button>Logout</button>
+            <a href="#">Logout</a>
         </div>
     </body>
 </html>

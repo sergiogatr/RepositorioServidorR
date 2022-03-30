@@ -47,7 +47,7 @@ public class Controller extends HttpServlet {
             } else {
                 
                 // Página Predeterminada
-                
+                response.sendRedirect("?cmd=visita-landing");
                 
             }
             
