@@ -4,6 +4,7 @@
     Author     : Sergio García Trincado - elfragger@gmail.com
 --%>
 
+<%@page import="org.japo.java.libraries.UtilesEntidad"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,12 +17,19 @@
     <body>
         <div id="container">
             <h1>Login</h1>
-            <form>
-                <label for="usuario">User</label>
-                <input id="usuario" type="text">
-                <label for="password">Password</label>
-                <input id="password" type="password">
-                <a href="#">Enviar</a>
+            <form action="?cmd=usuario-login&op=proceso" method="POST" accept-charset="ISO-8859-1">
+                <div class="fieldset">
+                   <label for="user">User</label>
+                   <input type="text" id="user" name="user" pattern="<%= UtilesEntidad.REG_USER %>"> 
+                </div>
+                <div class="fieldset">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" pattern="<%= UtilesEntidad.REG_PASS %>">  
+                </div>
+                <div class="buttonset">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restaurar">
+                </div>
             </form>
         </div>
     </body>

@@ -9,15 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Visita | Landing</title>
-        <link rel="stylesheet" href="public/css/visita/visita-landing.css"/>
+        <title> WEB-APP | Credencial Correcta </title>
+        <link rel="stylesheet" href="public/css/message/credencial-incorrecta.css"/>
         <link rel="icon" type="image/ico" href="public/img/favicon.ico"/>
     </head>
     <body>
         <div id="container">
-            <h1>Estás en Visita</h1>
-            <img src="public/img/imagen1.jpg" alt="alt"/>
-            <a href="?cmd=usuario-login">Acceder</a>
+            <h2>Credencial Correcta</h2>
+            <p>La credencial introducida es correcta</p>
+            <a href="?cmd=usuario-login">Continuar</a>
         </div>
     </body>
 </html>
