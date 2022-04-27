@@ -1,0 +1,97 @@
+*, *:before, *::after {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-size: 2.5vh;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#container {
+    height: calc(100vh - 10rem);
+    gap: 1rem;
+    padding: 1rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > img {
+    height: 70%;
+}
+
+a {
+    height: 100%;
+}
+
+/* --- */
+
+#cadillac {
+    background-image: url(../../img/cadillac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    height: 100%;
+}
+
+#cadillac:hover {
+    background-image: url(../../img/cadillac2.PNG);
+    background-position: center;
+}
+
+/* --- */
+
+#chevrolet {
+    background-image: url(../../img/chevrolet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    height: 100%;
+}
+
+#chevrolet:hover {
+    background-image: url(../../img/chevrolet2.PNG);
+    background-position: center;
+}
+
+/* --- */
+
+#ford {
+    background-image: url(../../img/ford.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    height: 100%;
+}
+
+#ford:hover {
+    background-image: url(../../img/ford2.PNG);
+    background-position: center;
+}
+
+/* --- */
+
+#pontiac {
+    background-image: url(../../img/pontiac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    height: 100%;
+}
+
+#pontiac:hover {
+    background-image: url(../../img/pontiac2.PNG);
+    background-position: inherit;
+}
